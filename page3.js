@@ -1,10 +1,14 @@
-let mens = document.querySelector(".mens")
+let mens = document.querySelector(".mens");
 
-mens.addEventListener("click" , (e) => {
-   e.preventDefault;
-   setTimeout(()=>{
-    window.location.href = "page4.html"
-   } ,1500);
+console.log("Before Event");
 
-   
+mens.addEventListener("click", (e) => {
+  console.log("Clicked");
+  e.preventDefault();
+
+  setTimeout(() => {
+    window.location.href = "page4.html";
+  }, 1500);
 });
+
+console.log("After Event");
